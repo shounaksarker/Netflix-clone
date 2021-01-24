@@ -1,0 +1,36 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+.poster_img{
+    object-fit: contain;
+    width: 100%;
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 450ms; 
+}
+.poster_img:hover{
+    transform: scale(1.08);
+}
+.large_poster_img{
+    max-height: 300px;
+}
+.large_poster_img:hover{
+    transform: scale(1.09);
+}
+#err-msg{
+    font-size: 20px;
+    padding: 5px 10px;
+    background: rgba(255, 0, 0, 0.32);
+    color: white;
+    text-align: center;
+}
